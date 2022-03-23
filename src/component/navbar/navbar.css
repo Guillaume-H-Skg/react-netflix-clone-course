@@ -1,0 +1,6 @@
+.app_bar {
+    height: 95px;
+    background-image: linear-gradient( to top, rgba(253, 35, 35, 0) 0, rgba(38, 38, 38, 0.74) 100% );
+    padding: 25px 20px;
+    position: fixed;
+}

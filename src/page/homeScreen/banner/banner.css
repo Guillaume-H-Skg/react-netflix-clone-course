@@ -1,0 +1,9 @@
+.banner__bg {
+    height: 800px;
+    min-height: 800px;
+    width: 100vw;
+    background-image: url('../../../../public/img/login-bg.jpg');
+    background-size: cover;
+    padding: 12%;
+    /* padding-top: 200px; */
+}

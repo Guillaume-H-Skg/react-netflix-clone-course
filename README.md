@@ -1,22 +1,23 @@
 # react-netflix-clone-course
-
+**HUMBERT Guillaume**
 ## Features
-
--   Login
--   Who's watching
+This project is heavely focus on UI not really on fonctionnalities.
+-   Homepage [x] (Bonus)
+-   Login [x]
+-   Who's watching [x]
     -   Create new profile
     -   Edit profile
     -   Delete profile
--   Home page
-    -   Section by type
-    -   Top shows
+-   Home page [x]
+    -   Section by type [x]
+    -   Top shows [x]
 -   My List (care, this is scoped to a profile)
     -   Add to my List
     -   Remove from my List
--   Display details of a show
-    -   Movie: description, actors, cover, etc
-    -   Series: list of episodes, description, actors, cover,
--   Search
+-   Display details of a show [x]
+    -   Movie: description, actors, cover, etc [x] (Not all details)
+    -   Series: list of episodes, description, actors, cover, [x] (Not all details)
+-   Search [x] (Not the same as the true Netflix)
 
 ### To go further
 
