@@ -20,9 +20,12 @@ This project is heavely focus on UI not really on fonctionnalities.
 -   Search [x] (Not the same as the true Netflix)
 
 ### Issues
+
+<p>
     Le typage pourrait être largement amélioré à certains endroits (manque de temps) et le découpage en composant aussi.
     Toute la partie "My list" n'est pas présente. Et la partie search est totalement différente de celle de Netflix. La search bar de la navbar est uniquement un lien cliquable vers la partie search.
     Le slider des rows contenant les films et les series n'est uniquement visible et utilisable sur chrome.
+</p>
 
 ### To go further
 
