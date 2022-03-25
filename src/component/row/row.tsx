@@ -25,23 +25,15 @@ function Row({ title, fetchUrl }: RowProps) {
 
     }, [fetchUrl]);
 
-    //console.log(title, movies);
 
     return (
         <div className="row">
             <h2>{title}</h2>
 
             <div className="row_posters">
-                {movies.map((movie: any, index) => (
+                {movies.map((movie, index) => (
                     <div>
-                        {/* 
-                        <img className="row_poster"
-                            key={movie.id}
-                            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                            alt={movie?.title || movie?.original_title || movie?.name || movie?.original_name}
-                            //onClick={(e) =>handleClick(e, movie?.title || movie?.original_title || movie?.name || movie?.original_name)}
-                            /> */}
-                            <ModalInfo key={index} isShown={true} movieInfo={movie}/>
+                        <ModalInfo key={index} isShown={true} movieInfo={movie}/>
                     </div>
                 ))}
             </div>

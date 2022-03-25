@@ -1,8 +1,7 @@
-import { Box, Button, Container, Divider, Grid, Tab, Tabs, TextField, Typography } from '@mui/material';
+import { Box, Button, Container, Divider, Grid, Tab, Tabs, TextField} from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import NavbarLogged from '../../component/navbar/navbarLogged';
 import TopShow from '../showsListScreen/topShow/topShow';
-import SearchIcon from '@mui/icons-material/Search';
 import axios from 'axios';
 import ModalInfo from '../../component/row/modal';
 import "../../component/row/row.css";
@@ -13,9 +12,8 @@ const StyleDivider = {
 }
 
 const SearchScreen = () => {
-    const [type, setType] = useState(0);
-    // const [page, setPage] = useState(1);
-    const [searchText, setSearchText] = useState("");
+    const [type, setType] = useState<number>(0);
+    const [searchText, setSearchText] = useState<string>("");
     const [content, setContent] = useState([]);
 
     const fetchSearch = async () => {
@@ -25,8 +23,6 @@ const SearchScreen = () => {
                 }&language=fr-FR&query=${searchText}&page=1&include_adult=false`
             );
             setContent(data.results);
-            //   setNumOfPages(data.total_pages);
-            // console.log(data);
         } catch (error) {
             console.error(error);
         }
@@ -52,7 +48,7 @@ const SearchScreen = () => {
                                 variant="filled"
                                 label="Search any kind of show"
                                 fullWidth
-                                sx={{ bgcolor: 'common.white' }}
+                                sx={{ bgcolor: 'white' }}
                                 onChange={(e) => setSearchText(e.target.value)}
                             />
                         </Grid>
@@ -64,7 +60,7 @@ const SearchScreen = () => {
                                 sx={{ height: '100%', borderRadius: '2px' }}
                                 onClick={fetchSearch}
                             >
-                                Search <SearchIcon/>
+                                Search
                             </Button>
                         </Grid>
                     </Grid>
@@ -74,7 +70,6 @@ const SearchScreen = () => {
                         <Tabs value={type} indicatorColor='primary' textColor='secondary'
                             onChange={(event, newValue) => {
                                 setType(newValue);
-                                // setPage(1);
                             }}>
                             <Tab style={{ color: "white",}} label="Movies" />
                             <Tab style={{ color: "white",}} label="TV Series" />
@@ -93,17 +88,6 @@ const SearchScreen = () => {
                         <p>{content.length} result out of 20</p>
                     </Box>
                 </Container>
-
-                {/* <Box sx={{ display: 'flex', margin: '15px 0' }} style={{ backgroundColor: 'white' }}>
-                    <TextField
-                        style={{ flex: 1 }}
-                        className="searchBox"
-                        label="Search"
-                        variant="filled"
-                        onChange={(e) => setSearchText(e.target.value)}
-                    />
-                    <Button onClick={fetchSearch}><SearchIcon /></Button>
-                </Box> */}
             </Box>
         </>
     )

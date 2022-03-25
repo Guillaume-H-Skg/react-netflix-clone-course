@@ -45,7 +45,7 @@ const Nav = () => {
                 name="lang"
                 variant="outlined"
                 size="small"
-                defaultValue="FR"
+                defaultValue="EN"
                 sx={StyleSelect}
               >
                 <MenuItem value="EN">English</MenuItem>

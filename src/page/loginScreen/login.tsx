@@ -6,7 +6,7 @@ import { Form } from './form/form';
 
 const loginScreen = () => {
   return (
-    <div>
+    <>
       <Logo/>
       <Box
         sx={{
@@ -37,7 +37,7 @@ const loginScreen = () => {
         </Box>
       </Box>
       <Footer/>
-    </div>
+    </>
   );
 }
 export default loginScreen

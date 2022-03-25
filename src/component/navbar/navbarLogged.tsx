@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { AppBar, Grid, Toolbar, Box, IconButton, Badge, Typography, styled, InputBase, alpha, Stack } from '@mui/material'
-import { AccountCircle, } from '@mui/icons-material'
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom';
@@ -90,7 +89,7 @@ const NavbarLogged = () => {
                                         component="div"
                                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                                     >
-                                        MUIdqd
+                                        <Link to="/">Home</Link>
                                     </Typography>
                                     <Typography
                                         variant="h6"
@@ -98,7 +97,7 @@ const NavbarLogged = () => {
                                         component="div"
                                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                                     >
-                                        MUIdqd
+                                        <Link to="../showsList">Movies</Link>
                                     </Typography>
                                     <Typography
                                         variant="h6"
@@ -106,22 +105,13 @@ const NavbarLogged = () => {
                                         component="div"
                                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                                     >
-                                        MUIdqd
+                                        <Link to="../seriesList">TV Shows</Link>
                                     </Typography>
                                 </Stack>
                             </Box>
                         </Toolbar>
                     </Grid>
-
                     <Toolbar>
-                        {/* <IconButton
-                            size="large"
-                            edge="start"
-                            color="inherit"
-                            aria-label="open drawer"
-                            sx={{ mr: 2 }}
-                        >
-                        </IconButton> */}
                         <Box sx={{ flexGrow: 1 }} />
                         <Search>
                             <Link to="../search">
@@ -153,19 +143,19 @@ const NavbarLogged = () => {
                                     aria-haspopup="true"
                                     color="inherit"
                                 >
-                                    <AccountCircle />
+                                <img
+                                    src="../../img/profile-avatarA.png"
+                                    height="45px"
+                                    width="45px"
+                                    alt="Netflix logo"
+                                />
                                 </IconButton>
                             </Link>
                         </Box>
-                        {/* <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-                            <IconButton>
-                            </IconButton>
-                        </Box> */}
                     </Toolbar>
                 </Grid>
             </Toolbar>
         </AppBar>
-
     )
 }
 

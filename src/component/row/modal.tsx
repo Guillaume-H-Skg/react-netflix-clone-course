@@ -71,7 +71,7 @@ const AvatarS = {
 
 const ModalInfo = ({ movieInfo }: PosterInfo) => {
 
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState<boolean>(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
@@ -197,9 +197,6 @@ const ModalInfo = ({ movieInfo }: PosterInfo) => {
                                     <Typography style={GreyText}>
                                         {movieInfo?.original_language ? movieInfo?.original_language : "Unknown"}
                                     </Typography>
-                                    {/* <Typography style={{ textShadow: 'rgb(0 0 0 / 90%) 0px 0px 13px', color: '#6d6f72' }}>
-                                        Number of vote: {movieInfo?.vote_count ? movieInfo?.vote_count : "Unknown"} 
-                                    </Typography> */}
                                 </Stack>
                             </Grid>
                         </Grid>

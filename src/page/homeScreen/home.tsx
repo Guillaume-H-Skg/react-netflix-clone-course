@@ -6,20 +6,15 @@ import FAQ from './FAQ/FaQuestion'
 import Footer from '../../component/footer/footer'
 
 const HomeSreen = () => {
-  return (
-    <div>
-        <Nav/>
-
-        <Banner/>
-        
-        <Feature/>
-        
-        <FAQ/>
-
-        <Footer/>
-
-    </div>
-  )
+    return (
+        <div>
+            <Nav />
+            <Banner />
+            <Feature />
+            <FAQ />
+            <Footer />
+        </div>
+    )
 }
 
 export default HomeSreen

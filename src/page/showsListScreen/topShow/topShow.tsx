@@ -45,9 +45,6 @@ const TopShow = () => {
                     backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`
                 }
             }}>
-                {/* <img src="../img/login-bg.jpg" alt='img' />
-                    qdqd */}
-
                 <Grid
                     container
                     direction="row"
@@ -74,7 +71,6 @@ const TopShow = () => {
                     </Grid>
                     <Grid item >
                         <Stack direction="row" spacing={2}>
-                            {/* <Box mt={1} style={{ border: '2px solid white', borderRadius: '50%', padding: '4px' }}> */}
                             <Avatar sx={{ bgcolor: "transparent", border: "1px solid white", padding: "2px" }}>
                                 <VolumeUpOutlinedIcon fontSize="large" />
                             </Avatar>

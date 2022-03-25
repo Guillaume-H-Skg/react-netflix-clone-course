@@ -28,7 +28,7 @@ const StyleContainer = {
 }
 
 export const Form = () => {
-    const [showPassword, setShowPassword] = useState(false)
+    const [showPassword, setShowPassword] = useState<boolean>(false)
     return (
         <Container maxWidth="md" sx={StyleContainer}>
             <Box sx={Style}>
@@ -39,12 +39,12 @@ export const Form = () => {
                     <form>
                         <FormControl sx={{ mb: 2, }} fullWidth>
                             <TextField
+                                sx={{ backgroundColor: '#333333', input: { color: 'white' } }}
                                 className='text__field'
                                 id="email"
                                 name="email"
                                 label="Email or phone number"
                                 variant="filled"
-                                sx={{ backgroundColor: '#333333', input: { color: 'white' } }}
                                 InputLabelProps={{
                                     style: { color: '#7a7a7a', },
                                 }}

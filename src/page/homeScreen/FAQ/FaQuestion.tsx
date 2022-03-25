@@ -18,11 +18,11 @@ const FaQuestion = () => {
     <Box>
       <Container maxWidth="md" sx={{ py: 6 }}>
         <Typography
+          sx={{ mb: 6 }}
           variant="h3"
           component="h3"
-          color="common.white"
+          color="white"
           align="center"
-          sx={{ mb: 6 }}
         >
           Frequently Asked Questions
         </Typography>
@@ -104,7 +104,6 @@ const FaQuestion = () => {
               <Typography variant="h5" mb={4}>
                 Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
               </Typography>
-
             </AccordionDetails>
           </Accordion>
           <Accordion square sx={ColorAccordion}>
@@ -125,34 +124,32 @@ const FaQuestion = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-
-
         </Stack>
         <Box sx={{ px: 12 }}>
           <Typography
+            sx={{ my: 3 }}
             variant="h6"
             component="p"
-            color="common.white"
+            color="white"
             textAlign="center"
-            sx={{ my: 3 }}
           >
             Ready to watch? Enter your email to create or restart your membership.
           </Typography>
           <Grid container>
               <Grid item xs>
                 <TextField
+                  sx={{ bgcolor: 'white' }}
                   variant="filled"
                   label="Email address"
                   fullWidth
-                  sx={{ bgcolor: 'common.white' }}
                 />
               </Grid>
               <Grid item xs="auto">
                 <Button
+                  sx={{ height: '100%', borderRadius: '2px'}}
                   variant="contained"
                   size="large"
                   color="primary"
-                  sx={{ height: '100%', borderRadius: '2px'}}
                 >
                   Get started <ChevronRightIcon/>
                 </Button>

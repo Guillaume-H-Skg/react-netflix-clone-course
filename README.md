@@ -5,9 +5,9 @@ This project is heavely focus on UI not really on fonctionnalities.
 -   Homepage [x] (Bonus)
 -   Login [x]
 -   Who's watching [x]
-    -   Create new profile
-    -   Edit profile
-    -   Delete profile
+    -   Create new profile [x]
+    -   Edit profile [x]
+    -   Delete profile [x]
 -   Home page [x]
     -   Section by type [x]
     -   Top shows [x]
@@ -18,6 +18,11 @@ This project is heavely focus on UI not really on fonctionnalities.
     -   Movie: description, actors, cover, etc [x] (Not all details)
     -   Series: list of episodes, description, actors, cover, [x] (Not all details)
 -   Search [x] (Not the same as the true Netflix)
+
+### Issues
+    Le typage pourrait être largement amélioré à certains endroits (manque de temps) et le découpage en composant aussi.
+    Toute la partie "My list" n'est pas présente. Et la partie search est totalement différente de celle de Netflix. La search bar de la navbar est uniquement un lien cliquable vers la partie search.
+    Le slider des rows contenant les films et les series n'est uniquement visible et utilisable sur chrome.
 
 ### To go further
 

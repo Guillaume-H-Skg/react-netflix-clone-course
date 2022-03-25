@@ -6,14 +6,12 @@ import TopShow from './topShow/topShow'
 
 const ShowList = () => {
   return (
-    <div>
-        <NavbarLogged/>
-        <TopShow/>
-        <FilmCategories/>
-        <Footer/>
-
-
-    </div>
+    <>
+      <NavbarLogged />
+      <TopShow />
+      <FilmCategories />
+      <Footer />
+    </>
   )
 }
 

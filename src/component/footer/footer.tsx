@@ -1,10 +1,9 @@
-import { AppBar, Grid, Select, Toolbar, MenuItem, Button, Icon, ListItemIcon, ListItemText, Stack, Typography, Box, Container} from '@mui/material'
+import {Grid, Select, MenuItem, Stack, Typography, Box, Container} from '@mui/material'
 import React from 'react'
-import LanguageIcon from '@mui/icons-material/Language';
 
 const Footer = () => {
   return (
-    <Box sx={{ bgcolor: 'common.black', color: 'grey.700' }}>
+    <Box sx={{ bgcolor: 'black', color: 'grey.700' }}>
 
       <Container maxWidth="md" sx={{ py: 6 }}>
         <Stack spacing={4}>
@@ -95,10 +94,10 @@ const Footer = () => {
               sx={{
                 borderWidth: '2px',
                 borderStyle: 'solid',
-                borderColor: 'common.white',
-                color: 'common.white',
+                borderColor: 'white',
+                color: 'white',
                 '& .MuiSelect-icon': {
-                  color: 'common.white'
+                  color: 'white'
                 },
                 '& .MuiOutlinedInput-notchedOutline': {
                   border: 'none'

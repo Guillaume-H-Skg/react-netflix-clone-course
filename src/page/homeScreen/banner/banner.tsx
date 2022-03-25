@@ -4,32 +4,9 @@ import './banner.css'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { Link } from 'react-router-dom'
 
-const StyleBanner = {
-  position: 'relative',
-  height: '800px',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  '&::after': {
-    position: 'absolute',
-    content: '""',
-    width: '100%',
-    height: '100%',
-    top: 0,
-    left: 0,
-    background: 'rgba(0, 0, 0, 0.4)',
-    backgroundImage: `linear-gradient(
-              to bottom,
-              rgba(0, 0, 0, 0.6) 0,
-              rgba(0, 0, 0, 0) 60%,
-              rgba(0, 0, 0, 0.8) 100%
-            )`,
-  }
-}
-
 const Banner = () => {
   return (
-    <Box>
+    <>
       <Box
         sx={{
           position: 'relative',
@@ -68,37 +45,37 @@ const Banner = () => {
             <Typography
               variant="h5"
               component="p"
-              color="common.white"
               textAlign="center"
               gutterBottom
+              color="white"
             >
               Watch anywhere. Cancel anytime.
             </Typography>
             <Typography
+              sx={{ my: 3 }}
               variant="h6"
               component="p"
-              color="common.white"
               textAlign="center"
-              sx={{ my: 3 }}
+              color="white"
             >
               Ready to watch? Enter your email to create or restart your membership.
             </Typography>
             <Grid container>
               <Grid item xs>
                 <TextField
+                  sx={{ bgcolor: 'white' }}
                   variant="filled"
                   label="Email address"
                   fullWidth
-                  sx={{ bgcolor: 'common.white' }}
                 />
               </Grid>
               <Grid item xs="auto">
               <Link to="login">
                 <Button
+                  sx={{ height: '100%', borderRadius: '2px' }}
+                  color="primary"
                   variant="contained"
                   size="large"
-                  color="primary"
-                  sx={{ height: '100%', borderRadius: '2px' }}
                 >
                  Get started <ChevronRightIcon />
                 </Button>
@@ -108,7 +85,7 @@ const Banner = () => {
           </Container>
         </Box>
       </Box>
-    </Box>
+    </>
   )
 }
 

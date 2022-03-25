@@ -10,6 +10,7 @@ ReactDOM.render(
    <React.StrictMode>
      <App />
    </React.StrictMode>,
+  // Necessaire pour Redux
   // <Provider store={store}>
   //   <App />
   // </Provider>,
