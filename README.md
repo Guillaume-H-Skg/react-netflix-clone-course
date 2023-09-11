@@ -11,9 +11,6 @@ This project is heavely focus on UI not really on fonctionnalities.
 -   Home page [x]
     -   Section by type [x]
     -   Top shows [x]
--   My List (care, this is scoped to a profile)
-    -   Add to my List
-    -   Remove from my List
 -   Display details of a show [x]
     -   Movie: description, actors, cover, etc [x] (Not all details)
     -   Series: list of episodes, description, actors, cover, [x] (Not all details)
@@ -22,9 +19,7 @@ This project is heavely focus on UI not really on fonctionnalities.
 ### Issues
 
 <p>
-    Le typage pourrait être largement amélioré à certains endroits (manque de temps) et le découpage en composant aussi.
-    Toute la partie "My list" n'est pas présente. Et la partie search est totalement différente de celle de Netflix. La search bar de la navbar est uniquement un lien cliquable vers la partie search.
-    Le slider des rows contenant les films et les series n'est uniquement visible et utilisable sur chrome.
+    Le typage pourrait être largement amélioré à certains endroits et le découpage en composant aussi.
 </p>
 
 ### To go further
